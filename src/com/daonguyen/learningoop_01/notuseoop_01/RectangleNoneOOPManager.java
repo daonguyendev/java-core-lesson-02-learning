@@ -1,8 +1,8 @@
-package com.daonguyen.notuseoop;
+package com.daonguyen.learningoop_01.notuseoop_01;
 
 import java.util.Scanner;
 
-public class Main {
+public class RectangleNoneOOPManager {
     // declare 3 times 2 variables: length, width and calculate perimeter for each rectangle
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

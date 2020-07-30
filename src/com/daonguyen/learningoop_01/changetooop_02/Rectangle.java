@@ -1,4 +1,4 @@
-package com.daonguyen.changetooop;
+package com.daonguyen.learningoop_01.changetooop_02;
 
 // generalization from object to object class
 public class Rectangle {

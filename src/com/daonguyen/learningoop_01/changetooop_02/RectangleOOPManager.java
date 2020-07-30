@@ -1,6 +1,6 @@
-package com.daonguyen.changetooop;
+package com.daonguyen.learningoop_01.changetooop_02;
 
-public class Main {
+public class RectangleOOPManager {
     public static void main(String[] args) {
         Rectangle firstRec = new Rectangle(7, 5); // init instance of rectangle for first rectangle
         Rectangle secondRec = new Rectangle(8, 5); // init instance of rectangle for second rectangle

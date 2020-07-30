@@ -1,4 +1,4 @@
-package com.daonguyen.learningoop;
+package com.daonguyen.learningoop_02;
 
 public class Student {
     private String name;
@@ -6,7 +6,6 @@ public class Student {
     private float math;
     private float physic;
     private float chemistry;
-    private float average;
 
     public Student() {
 

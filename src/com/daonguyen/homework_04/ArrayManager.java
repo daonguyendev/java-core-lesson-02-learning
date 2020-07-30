@@ -1,6 +1,6 @@
-package com.daonguyen.homework;
+package com.daonguyen.homework_04;
 
-public class Main {
+public class ArrayManager {
 
     // Loops: for, while, do-while, foreach
     public static void main(String[] args) {

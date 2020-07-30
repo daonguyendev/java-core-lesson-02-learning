@@ -1,8 +1,8 @@
-package com.daonguyen.homework;
+package com.daonguyen.homework_04;
 
 import java.util.Scanner;
 
-public class Exercise {
+public class ExerciseManager {
 
     public static void main(String[] args) {
         int[] array = createInputOutput();

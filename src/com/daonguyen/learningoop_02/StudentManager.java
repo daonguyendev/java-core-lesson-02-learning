@@ -1,9 +1,9 @@
-package com.daonguyen.learningoop;
+package com.daonguyen.learningoop_02;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class Main {
+public class StudentManager {
     public static void main(String[] args) {
         // create list of student
         List students = createStudents();
@@ -15,33 +15,20 @@ public class Main {
         ratingStudent(students);
 
         // find student have max average
-        calculateAverage(students);
-
-        // TODO: print all of weakly students
-        findWeaklyStudents(students);
-    }
-
-    private static void findWeaklyStudents(List students) {
-        List<Student> weaklyStudents = new ArrayList<>();
-
-        String rating = "";
-        System.out.println("\nList of weakly student is: ");
-        for (int i = 0; i < students.size(); i++) {
-            Student student = (Student) students.get(i);
-            rating = handleRating(student);
-
-            if (rating.equals("Weak")) {
-                weaklyStudents.add(student);
-            }
-        }
-
-        for (int i = 0; i < weaklyStudents.size(); i++) { // not good here
-            Student student = (Student) students.get(i);
-            System.out.println("\nAverage of " + student.getName() + "] is: " + student.getAverage());
-        }
+        findMaxAverage(students);
     }
 
     private static void calculateAverage(List students) {
+        float average = 0;
+        System.out.println("\nAverage of each student is: ");
+        for (int i = 0; i < students.size(); i++) {
+            Student student = (Student) students.get(i);
+            average = student.getAverage();
+            System.out.println("Average of " + student.getName() + " is: " + average);
+        }
+    }
+
+    private static void findMaxAverage(List students) {
         int position = 0;
         for (int i = 0; i < students.size() - 1; i++) {
             Student firstStudent = (Student) students.get(i);
@@ -80,7 +67,7 @@ public class Main {
         for (int i = 0; i < students.size(); i++) {
             Student student = students.get(i);
             rating = handleRating(student);
-            System.out.println("Average of " + student.getName() + " is: " + rating);
+            System.out.println("Rating of " + student.getName() + " is: " + rating);
         }
     }
 
